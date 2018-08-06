@@ -5,6 +5,10 @@ img {
 	opacity: .7;
 }
 
+img:nth-of-type(even) {
+	border-radius: 35%;
+}
+
 img:hover {
 	opacity: 1;
 }
