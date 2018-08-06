@@ -1,6 +1,11 @@
 img {
 	width: 30%;
 	height: 30%;
+	opacity: .7;
+}
+
+img:hover {
+	opacity: 1;
 }
 
 .title {
