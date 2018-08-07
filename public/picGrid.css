@@ -8,11 +8,13 @@ img {
 figure {
 	margin: 0;
 	width: 30%;
-	height: 20%;
+	height: 27%;
 }
 
 figcaption {
 	text-align: center;
+	border-bottom: 1px solid springgreen;
+	border-radius: 50%;
 }
 
 img:nth-of-type(even) {
