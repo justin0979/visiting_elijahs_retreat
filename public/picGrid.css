@@ -5,7 +5,13 @@ button {
 }
 
 #balancebeam:hover {
-	transform: scale(1, 1.5);
+	transform: scale(1, 1.2);
+}
+
+div {
+	width: 90%;
+	margin: 1% auto;
+	padding-bottom: 1%;
 }
 
 img {
@@ -16,6 +22,7 @@ img {
 	position: relative;
 	display: block;
 	box-shadow: 3px 6px gray;
+	transition-duration: 0.5s;
 }
 
 img:hover {
@@ -38,7 +45,7 @@ figure {
 
 figcaption {
 	letter-spacing: 1px;
-	margin-top: 5px;
+	margin-top: 1%;
 	text-align: center;
 	border-bottom: 1px solid springgreen;
 	border-radius: 50%;
