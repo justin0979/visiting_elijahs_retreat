@@ -95,6 +95,10 @@ figure:nth-of-type(2), figure:nth-of-type(8) {
 	background-color: tan;
 }
 
+figure:hover {
+	background-color: rgba(0,0,0,0);
+}
+
 figcaption {
 	letter-spacing: 1px;
 	margin-top: 1%;
