@@ -1,14 +1,7 @@
 body {
-	background: url('../pics/balancebeam.jpg');
+	background-image: url('../pics/balancebeam.jpg');
+	background-attachment: fixed;
 }
-/*
-button {
-	border: none;
-	cursor: pointer;
-	color: rgb(220,220,220);
-	background-color: rgba(2,4,4,0);
-}
-*/
 
 #bb {
 	padding: 10px;
@@ -17,14 +10,10 @@ button {
 #bbform {
 	height: 100%;
 	width: 100%;
-	/*
-	border-bottom: 1px solid springgreen;
-	border-radius: 5%;
-	padding-bottom: 15px;
-	*/
 }
 
 #balancebeam {
+	opacity: .7;
 	cursor: pointer;
 	font-weight: 900;
 	font-size: 250%;
@@ -38,11 +27,14 @@ button {
 	background-image: url('../pics/balancebeam.jpg');
 	position: relative;
 	box-shadow: 0 6px black;
+	transition-property: opacity;
+	transition-duration: 1s;
 }
 
 #balancebeam:hover {
 	box-shadow: 0 4px black;
 	top: 2px;
+	opacity: 1;
 }
 
 #balancebeam:active {
@@ -87,9 +79,20 @@ img:active {
 }
 
 figure {
+	background-color: blue;
+	border-radius: 7%;
 	margin: 0;
 	width: 30%;
 	height: 27%;
+	position: relative;
+}
+
+figure:nth-of-type(1) {
+	background-color: black;
+}
+
+figure:nth-of-type(2), figure:nth-of-type(8) {
+	background-color: tan;
 }
 
 figcaption {

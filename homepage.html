@@ -3,7 +3,7 @@
 <head>
 	<meta charset='utf-8'>
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,800'>
-	<link rel='stylesheet' type='text/css' href='public/picGrid.css'>
+	<link rel='stylesheet' type='text/css' href='public/css/picGrid.css'>
 	<title>Photo's</title>
 </head>
 <body>
@@ -11,15 +11,10 @@
 	
 	<div class='row'>
 		<figure>
-			<img id='balancebeam' src='public/pics/balancebeam.jpg'>
-<!--
-			<figcaption>Balance Beam</figcaption>
--->
-			<figcaption>
-				<form action='./balancebeam.html' method='get'>
-					<button>Balance Beam</button>
-				</form>
-			</figcaption>
+			<form id='bbform' action='./balancebeam.html' method='get'>
+				<button id='balancebeam'>Balance Beam</button>
+			</form>
+			<figcaption id="bb"></figcaption>
 		</figure>
 		<figure>
 			<img src='public/pics/buccees.jpg'>
