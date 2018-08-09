@@ -47,6 +47,13 @@ body {
 	box-shadow: 1px 1px blue;
 }
 
+button {
+	background-color: rgba(4,5,5,0.8);
+	color: white;
+	border:none;
+	cursor: pointer;
+}
+
 div {
 	background-color: rgba(4,5,5,0.8);
 	width: 90%;
@@ -93,6 +100,10 @@ figure:nth-of-type(1) {
 
 figure:nth-of-type(2), figure:nth-of-type(8) {
 	background-color: tan;
+}
+
+figure:nth-of-type(4) {
+	background-color: springgreen;
 }
 
 figure:hover {
