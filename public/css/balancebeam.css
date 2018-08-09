@@ -1,0 +1,24 @@
+#homePageButton {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 6px black;
+}
+
+#homePageButton:hover {
+	box-shadow: 0 4px black;
+	top: 2px;
+}
+
+#homePageButton:active {
+	top: 6px;
+	box-shadow: none;
+}
+
+#homePageButton:focus {
+	outline: none;
+	background-color: #39ff14;
+}
