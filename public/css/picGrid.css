@@ -151,6 +151,9 @@ img:hover {
 }
 
 #sideways {
+	position: absolute;
+	top: 50%;
+	left: 40%;
 	color: white;
 	border: 1px solid white;
 	border-radius: 50%;
@@ -158,9 +161,11 @@ img:hover {
 	width: 25%;
 	margin: 0 auto;
 	transform: scale(0);
+	transition: transform 1s cubic-bezier(.75, .8, .7, 1.25);
+	text-transform: uppercase;
 }
 
-#sideways:hover {
+#wss:hover #sideways {
 	transform: scale(2);
 }
 
