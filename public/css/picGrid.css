@@ -149,3 +149,27 @@ img:hover {
 	align-content: space-around;
 	border: 1px solid black;
 }
+
+#sideways {
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	text-align: center;
+	width: 25%;
+	margin: 0 auto;
+	transform: scale(0);
+}
+
+#sideways:hover {
+	transform: scale(2);
+}
+
+#wss {
+	filter: grayscale(100%);
+	transition: filter 1s linear;
+}
+
+#wss:hover {
+	filter: grayscale(0);
+}
+
