@@ -54,7 +54,7 @@ button {
 	cursor: pointer;
 }
 
-div {
+div.row, div.in-body {
 	background-color: rgba(4,5,5,0.8);
 	width: 90%;
 	margin: 1% auto;
@@ -118,6 +118,13 @@ figure:nth-of-type(6) .flipper {
 	transform: translateY(-7%);
 }
 
+figure:nth-of-type(6) {
+	background-color: rgba(0,0,0,0);
+}
+
+figure:nth-of-type(6) img {
+	opacity: 1;
+}
 
 figure:hover {
 	background-color: rgba(0,0,0,0);
@@ -194,3 +201,14 @@ img:hover {
 	filter: grayscale(0);
 }
 
+.block {
+	height: 100px;
+	width: 100px;
+	background-color: springgreen;
+}
+
+.in-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
