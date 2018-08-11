@@ -4,6 +4,7 @@
 	<meta charset='utf-8'>
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,800'>
 	<link rel='stylesheet' type='text/css' href='public/css/picGrid.css'>
+	<link rel='stylesheet' type='text/css' href='public/css/flip.css'>
 	<title>Photo's</title>
 </head>
 <body>
@@ -37,8 +38,17 @@
 			<p id='sideways'>Sideways</p>
 		</figure>
 		<figure>
-			<img src='public/pics/waterslidepic.jpg'>
-			<figcaption>Another Water Slide pic</figcaption>
+			<div class='flip-container'>
+				<div class='flipper'>
+					<div class='front'>
+						<img src='public/pics/waterslidepic.jpg'>
+						<figcaption>Another Water Slide pic</figcaption>
+					</div>
+					<div class='back'>
+						<p>This is the back</p>
+					</div>
+				</div>
+			</div>
 		</figure>
 		<figure>
 			<img src='public/pics/balancebeam.jpg'>
