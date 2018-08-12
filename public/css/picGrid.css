@@ -29,6 +29,7 @@ body {
 	box-shadow: 0 6px black;
 	transition-property: opacity;
 	transition-duration: 1s;
+	background-size: 100%;
 }
 
 #balancebeam:hover {
