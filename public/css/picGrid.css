@@ -107,8 +107,8 @@ figure:nth-of-type(3) figcaption{
 	position: absolute;
 	top: 50%;
 	left: 60%;
-	transition: transform 1s cubic-bezier(.8,.8,.8,1.2);
 	transform: scale(0);
+	transition: transform 1s cubic-bezier(.8,.8,.8,1.2);
 }
 
 figure:nth-of-type(4) {
