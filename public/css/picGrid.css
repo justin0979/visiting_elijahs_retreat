@@ -26,26 +26,34 @@ body {
 	height: 100%;
 	background-image: url('../pics/balancebeam.jpg');
 	position: relative;
-	box-shadow: 0 6px black;
+	-webkit-box-shadow: 0 6px black;
+	        box-shadow: 0 6px black;
+	-webkit-transition-property: opacity;
+	-o-transition-property: opacity;
 	transition-property: opacity;
-	transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	     -o-transition-duration: 1s;
+	        transition-duration: 1s;
 	background-size: 100%;
 }
 
 #balancebeam:hover {
-	box-shadow: 0 4px black;
+	-webkit-box-shadow: 0 4px black;
+	        box-shadow: 0 4px black;
 	top: 2px;
 	opacity: 1;
 }
 
 #balancebeam:active {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	top: 6px;
 }
 
 #balancebeam:focus {
 	outline: none;
-	box-shadow: 1px 1px blue;
+	-webkit-box-shadow: 1px 1px blue;
+	        box-shadow: 1px 1px blue;
 }
 
 button {
@@ -69,19 +77,26 @@ img {
 	opacity: .7;
 	position: relative;
 	display: block;
-	box-shadow: 3px 6px black;
-	transition-duration: 1s;
+	-webkit-box-shadow: 3px 6px black;
+	        box-shadow: 3px 6px black;
+	-webkit-transition-duration: 1s;
+	     -o-transition-duration: 1s;
+	        transition-duration: 1s;
+	-webkit-transition-property: opacity ;
+	-o-transition-property: opacity ;
 	transition-property: opacity ;
 }
 
 img:hover {
-	box-shadow: 2px 4px black;
+	-webkit-box-shadow: 2px 4px black;
+	        box-shadow: 2px 4px black;
 	top: 2px;
 	left: 1px;
 }
 
 img:active {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	left: 2px;
 	top: 6px;
 }
@@ -107,8 +122,14 @@ figure:nth-of-type(3) figcaption{
 	position: absolute;
 	top: 50%;
 	left: 60%;
-	transform: scale(0);
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: -webkit-transform 1s cubic-bezier(.8,.8,.8,1.2);
+	transition: -webkit-transform 1s cubic-bezier(.8,.8,.8,1.2);
+	-o-transition: transform 1s cubic-bezier(.8,.8,.8,1.2);
 	transition: transform 1s cubic-bezier(.8,.8,.8,1.2);
+	transition: transform 1s cubic-bezier(.8,.8,.8,1.2), -webkit-transform 1s cubic-bezier(.8,.8,.8,1.2);
 }
 
 figure:nth-of-type(4) {
@@ -116,7 +137,9 @@ figure:nth-of-type(4) {
 }
 
 figure:nth-of-type(6) .flipper {
-	transform: translateY(-7%);
+	-webkit-transform: translateY(-7%);
+	    -ms-transform: translateY(-7%);
+	        transform: translateY(-7%);
 }
 
 figure:nth-of-type(6) {
@@ -132,7 +155,9 @@ figure:hover {
 }
 
 figure:nth-of-type(3):hover figcaption {
-	transform: scale(2);
+	-webkit-transform: scale(2);
+	    -ms-transform: scale(2);
+	        transform: scale(2);
 }
 
 figcaption {
@@ -167,10 +192,15 @@ img:hover {
 
 .row {
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: distribute;
+	    align-content: space-around;
 	border: 1px solid black;
 }
 
@@ -184,22 +214,36 @@ img:hover {
 	text-align: center;
 	width: 25%;
 	margin: 0 auto;
-	transform: scale(0);
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: -webkit-transform 1s cubic-bezier(.75, .8, .7, 1.25);
+	transition: -webkit-transform 1s cubic-bezier(.75, .8, .7, 1.25);
+	-o-transition: transform 1s cubic-bezier(.75, .8, .7, 1.25);
 	transition: transform 1s cubic-bezier(.75, .8, .7, 1.25);
+	transition: transform 1s cubic-bezier(.75, .8, .7, 1.25), -webkit-transform 1s cubic-bezier(.75, .8, .7, 1.25);
 	text-transform: uppercase;
 }
 
 #wss:hover #sideways {
-	transform: scale(2);
+	-webkit-transform: scale(2);
+	    -ms-transform: scale(2);
+	        transform: scale(2);
 }
 
 #wss {
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+	-webkit-transition: -webkit-filter 1s linear;
+	transition: -webkit-filter 1s linear;
+	-o-transition: filter 1s linear;
 	transition: filter 1s linear;
+	transition: filter 1s linear, -webkit-filter 1s linear;
 }
 
 #wss:hover {
-	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
 }
 
 .block {
@@ -209,7 +253,14 @@ img:hover {
 }
 
 .in-body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }

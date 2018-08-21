@@ -5,17 +5,20 @@
 	border: none;
 	cursor: pointer;
 	position: relative;
-	box-shadow: 0 6px black;
+	-webkit-box-shadow: 0 6px black;
+	        box-shadow: 0 6px black;
 }
 
 #homePageButton:hover {
-	box-shadow: 0 4px black;
+	-webkit-box-shadow: 0 4px black;
+	        box-shadow: 0 4px black;
 	top: 2px;
 }
 
 #homePageButton:active {
 	top: 6px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 #homePageButton:focus {
